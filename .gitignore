@@ -1,5 +1,5 @@
 build/
-ezkernel.bin
-ezkernel.elf
-ezkernel.gba
+omega-kernel.bin
+omega-kernel.elf
+omega-kernel.gba
 copy.bat
