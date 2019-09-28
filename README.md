@@ -1,11 +1,20 @@
-# EZ-FLASH OMEGA Kernel
+# EZ-Flash Omega Kernel
 
-### How to build 
+This is the EZ Flash Omega Kernel, but with Spanish added to the languages list.
 
-    1.We use devkitARM_r47, you can use the current version or newer.
-    2.Set the following environment variables in system, or modify the value in build.bat, based on your installation path
- 
-        PATH,DEVKITARM,DEVKITPRO,LIBGBA
+This is mostly based on [@elssbbboy](https://github.com/elssbbboy) work, but with
+some little changes.
 
-    3.Double click on build.bat under winodws. If it goes well, you will get ezkernel.gba
-    4.Rename the ezkernel.gba to ezkernel.bin, that is the omega kernel upgrade file
+## Build
+
+If you want to build this kernel for your EZ Flash cartridge, you need to install
+DevKitPro. Follow the instructions from here:
+https://devkitpro.org/wiki/devkitPro_pacman
+
+Then just type `make` in your terminal and... voilá!
+
+> **NOTE:** Don't forget to rename the output file to `ezkernel.bin`
+
+## License
+
+This project is licensed under the [Apache License 2.0](LICENSE).
