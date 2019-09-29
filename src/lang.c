@@ -257,11 +257,11 @@ const char *en_nor_op[3] = {
 
 
 // Spanish
-const char es_init_error[]  = "Error al iniciar microSD";
-const char es_power_off[]   = "Apaga la consola";
-const char es_init_ok[]     = "microSD iniciada";
-const char es_Loading[]     = "Cargando...";
-const char es_file_overflow = "Archivo muy grande";
+const char es_init_error[]    = "Error al iniciar microSD";
+const char es_power_off[]     = "Apaga la consola";
+const char es_init_ok[]       = "microSD iniciada";
+const char es_Loading[]       = "Cargando...";
+const char es_file_overflow[] = "Archivo muy grande";
 
 const char es_menu_btn[]     = "[B]ATRAS     [A]OK";
 const char es_writing[]      = "ESCRIBIENDO...";

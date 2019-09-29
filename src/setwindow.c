@@ -117,7 +117,7 @@ u32 Setting_window(void)
 	}
     else if (gl_select_lang == 0xE2E2)
     {
-        language_sel = 1
+        language_sel = 1;
     }
 	else
 	{
