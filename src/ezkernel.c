@@ -142,6 +142,9 @@ void Show_help_window()
 		DrawHZText12(gl_LSTART_help,0,52,65, gl_color_text,1);
 
 	DrawHZText12(gl_online_manual,0,240-70-7,77, gl_color_text,1);
+
+    DrawHZText12(gl_zoe_gift,0,0,240-5, gl_color_text,1);
+
 	while(1)
 	{
 		VBlankIntrWait();

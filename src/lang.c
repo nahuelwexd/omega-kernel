@@ -78,6 +78,8 @@ char* gl_error_6;
 char**  gl_rom_menu;
 char**  gl_nor_op;
 
+char* gl_zoe_gift;
+
 
 // 中文
 const char zh_init_error[]    = "TF卡初始化失败";
@@ -166,6 +168,8 @@ const char *zh_nor_op[3] = {
 	"全部格式化"
 };
 
+const char zh_zoe_gift[] = "";
+
 
 
 // English
@@ -253,6 +257,8 @@ const char *en_nor_op[3] = {
 	"DELETE",
 	"FORMAT ALL"
 };
+
+const char en_zoe_gift[] = "";
 
 
 
@@ -343,6 +349,8 @@ const char *es_nor_op[3] = {
     "FORMATEAR TODO"
 };
 
+const char es_zoe_gift[] = "Te amo Zoe <3";
+
 
 
 //---------------------------------------------------------------------------------
@@ -425,6 +433,8 @@ void LoadChinese(void)
 	gl_rom_menu = (char**)zh_rom_menu;
 	gl_nor_op = (char**)zh_nor_op;
 
+    gl_zoe_gift = (char*)zh_zoe_gift;
+
 }
 //---------------------------------------------------------------------------------
 void LoadEnglish(void)
@@ -503,6 +513,8 @@ void LoadEnglish(void)
 	//
 	gl_rom_menu = (char**)en_rom_menu;
 	gl_nor_op = (char**)en_nor_op;
+
+    gl_zoe_gift = (char*)en_zoe_gift;
 }
 
 void LoadSpanish(void)
@@ -582,4 +594,6 @@ void LoadSpanish(void)
 
     gl_rom_menu = (char**)es_rom_menu;
     gl_nor_op   = (char**)es_nor_op;
+
+    gl_zoe_gift = (char*)es_zoe_gift;
 }
