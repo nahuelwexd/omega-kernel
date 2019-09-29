@@ -182,14 +182,14 @@ u32 Setting_window(void)
 			sprintf(msg,"%s",gl_language);
 			DrawHZText12(msg,0,set_offset,y_offset+line_x*3,gl_color_selected,1);
 				Draw_select_icon(x_offset,y_offset+line_x*3,(language_sel == 0));
-				Draw_select_icon(x_offset+12*5+8,y_offset+line_x*3,(language_sel == 1));
-                Draw_select_icon(x_offset*3,y_offset+line_x*3,(language_sel == 2));
+				Draw_select_icon(x_offset+12*3,y_offset+line_x*3,(language_sel == 1));
+                Draw_select_icon(x_offset+12*5+8,y_offset+line_x*3,(language_sel == 2));
 				sprintf(msg,"%s",gl_en_lang);
-				DrawHZText12(msg,0,x_offset+8,y_offset+line_x*3,((language_sel==0)&&currstate&& (2== select))?gl_color_selected:gl_color_text,1);
-				sprintf(msg,"%s",gl_es_lang);
-                DrawHZText12(msg,0,x_offset+12*3+9,y_offset+line_x*3,((language_sel==2)&&currstate&& (2== select))?gl_color_selected:gl_color_text,1);
+				DrawHZText12(msg,0,x_offset+8,y_offset+line_x*3,(language_sel==0)?gl_color_selected:gl_color_text,1);
                 sprintf(msg,"%s",gl_zh_lang);
-				DrawHZText12(msg,0,x_offset+12*5+16,y_offset+line_x*3,((language_sel==1)&&currstate&& (2== select))?gl_color_selected:gl_color_text,1);
+				DrawHZText12(msg,0,x_offset+12*3+9,y_offset+line_x*3,(language_sel==1)?gl_color_selected:gl_color_text,1);
+                sprintf(msg,"%s",gl_es_lang);
+                DrawHZText12(msg,0,x_offset+12*5+16,y_offset+line_x*3,(language_sel==2)?gl_color_selected:gl_color_text,1);
 
 			//
 			VBlankIntrWait();
