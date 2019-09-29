@@ -257,9 +257,9 @@ const char *en_nor_op[3] = {
 
 
 // Spanish
-const char es_init_error[]    = "Error al iniciar microSD";
+const char es_init_error[]    = "Error al iniciar MicroSD";
 const char es_power_off[]     = "Apaga la consola";
-const char es_init_ok[]       = "microSD iniciada";
+const char es_init_ok[]       = "MicroSD iniciada";
 const char es_Loading[]       = "Cargando...";
 const char es_file_overflow[] = "Archivo muy grande";
 
@@ -277,10 +277,10 @@ const char es_Sat[]  = "SAB";
 const char es_Sun[]  = "DOM";
 
 const char es_addon[] = " OPCIONES";
-const char es_reset[] = "RESET";
-const char es_rts[]   = "SAVESTATE";
-const char es_sleep[] = "SLEEP";
-const char es_cheat[] = "CHEAT";
+const char es_reset[] = "REINICIAR";
+const char es_rts[]   = "GUARDADO";
+const char es_sleep[] = "DORMIR";
+const char es_cheat[] = "TRUCOS";
 
 const char es_hot_key[]  = "SLEEP KEY";
 const char es_hot_key2[] = " MENU KEY";
@@ -304,7 +304,7 @@ const char es_make_pat[]  = "CREANDO PAT";
 const char es_loading_game[] = "CARGANDO EL JUEGO";
 
 const char es_engine[]     = "    MOTOR";
-const char es_use_engine[] = "MOTOR PARCHEO RAPIDO";
+const char es_use_engine[] = "PARCHEO RAPIDO";
 
 const char es_recently_play[] = "RECIEN JUGADO";
 
