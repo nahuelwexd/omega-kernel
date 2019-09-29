@@ -2,4 +2,4 @@ build/
 ezkernel.bin
 omega-kernel.elf
 omega-kernel.gba
-copy.bat
+.buildconfig
