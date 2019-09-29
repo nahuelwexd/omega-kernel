@@ -1043,8 +1043,11 @@ u32 Setting_window(void)
 						}
 						else if(select ==2) //lang
 						{
-							language_sel++;
-                            if (language_sel > 2)
+							if (language_sel == 0)
+                                language_sel = 1;
+                            else if (language_sel == 1)
+                                language_sel = 2;
+                            else
                                 language_sel = 0;
 						}
 						else if(select ==3)
@@ -1089,8 +1092,10 @@ u32 Setting_window(void)
 						{
 							if (language_sel == 0)
                                 language_sel = 2;
+                            else if (language_sel == 2)
+                                language_sel = 1;
                             else
-                                language_sel--;
+                                language_sel = 0;
 						}
 						else if(select ==3)
 						{
