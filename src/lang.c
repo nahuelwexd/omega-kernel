@@ -379,7 +379,8 @@ void LoadChinese(void)
 
 	gl_language =  (char*)zh_language;
 	gl_en_lang = (char*)en_lang;
-	gl_zh_lang = (char*)zh_lang;;
+	gl_zh_lang = (char*)zh_lang;
+    gl_es_lang = (char*)es_lang;
 	gl_set_btn = (char*)zh_set_btn;
 	gl_ok_btn = (char*)zh_ok_btn;
 	gl_formatnor_info = (char*)zh_formatnor_info;
@@ -457,7 +458,8 @@ void LoadEnglish(void)
 
 	gl_language =  (char*)en_language;
 	gl_en_lang = (char*)en_lang;
-	gl_zh_lang = (char*)zh_lang;;
+	gl_zh_lang = (char*)zh_lang;
+    gl_es_lang = (char*)es_lang;
 	gl_set_btn = (char*)en_set_btn;
 	gl_ok_btn = (char*)en_ok_btn;
 	gl_formatnor_info = (char*)en_formatnor_info;
