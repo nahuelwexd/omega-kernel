@@ -32,6 +32,7 @@ char* gl_hot_key2;
 char* gl_language;
 char* gl_en_lang;
 char* gl_zh_lang;
+char* gl_es_lang;
 char* gl_set_btn;
 char* gl_ok_btn;
 
@@ -197,7 +198,7 @@ const char en_hot_key[]  = "SLEEP KEY";
 const char en_hot_key2[] = " MENU KEY";
 
 const char en_language[] = " LANGUAGE";
-const char en_lang[]     = "ENGLISH";
+const char en_lang[]     = "ENG";
 const char en_set_btn[]  = "SET";
 const char en_ok_btn[]   = " OK";
 
@@ -251,6 +252,95 @@ const char *en_nor_op[3] = {
 	"DIRECT BOOT",
 	"DELETE",
 	"FORMAT ALL"
+};
+
+
+
+// Spanish
+const char es_init_error[]  = "Error al iniciar microSD";
+const char es_power_off[]   = "Apaga la consola";
+const char es_init_ok[]     = "microSD iniciada";
+const char es_Loading[]     = "Cargando...";
+const char es_file_overflow = "Archivo muy grande";
+
+const char es_menu_btn[]     = "[B]ATRAS     [A]OK";
+const char es_writing[]      = "ESCRIBIENDO...";
+const char es_lastest_game[] = "ELIGE EL ULTIMO";
+
+const char es_time[] = "     HORA";
+const char es_Mon[]  = "LUN";
+const char es_Tues[] = "MAR";
+const char es_Wed[]  = "MIE";
+const char es_Thur[] = "JUE";
+const char es_Fri[]  = "VIE";
+const char es_Sat[]  = "SAB";
+const char es_Sun[]  = "DOM";
+
+const char es_addon[] = " OPCIONES";
+const char es_reset[] = "RESET";
+const char es_rts[]   = "SAVESTATE";
+const char es_sleep[] = "SLEEP";
+const char es_cheat[] = "CHEAT";
+
+const char es_hot_key[]  = "SLEEP KEY";
+const char es_hot_key2[] = " MENU KEY";
+
+const char es_language[] = " LANGUAGE";
+const char es_lang[]     = "ESP";
+const char es_set_btn[]  = "SET";
+const char es_ok_btn[]   = " OK";
+
+const char es_formatnor_info[] = "Seguro? aprox. 4 mins";
+
+const char es_check_sav[] = "VERIFICANDO ARCHIVO SAV";
+const char es_make_sav[]  = "CREANDO ARCHIVO SAV";
+
+const char es_check_RTS[] = "VERIFICANDO ARCHIVO RTS";
+const char es_make_RTS[]  = "CREANDO ARCHIVO RTS";
+
+const char es_check_pat[] = "VERIFICANDO ARCHIVO PAT";
+const char es_make_pat[]  = "CREANDO ARCHIVO PAT";
+
+const char es_loading_game[] = "CARGANDO JUEGO";
+
+const char es_engine[]     = "    MOTOR";
+const char es_use_engine[] = "MOTOR PARCHEO RAPIDO";
+
+const char es_recently_play[] = "RECIEN JUGADO";
+
+const char es_START_help[]    = "Abrir lista de recien jugados";
+const char es_SELECT_help[]   = "Mostrar/ocultar miniaturas";
+const char es_L_A_help[]      = "Multiboot";
+const char es_LSTART_help[]   = "Borrar archivo";
+const char es_online_manual[] = "Manual en linea";
+
+const char es_no_game_played[] = "No has jugado a nada";
+
+const char es_ingameRTC[]       = " GAME RTC";
+const char es_ingameRTC_open[]  = "ABRIR";
+const char es_ingameRTC_close[] = "CERRAR"; // Apagar para ahorrar bateria
+
+const char es_error_0[] = "Error de carpeta";
+const char es_error_1[] = "Error de archivo";
+const char es_error_2[] = "Error de SAVER";
+const char es_error_3[] = "Error de guardado";
+const char es_error_4[] = "Error al leer el guardado";
+const char es_error_5[] = "Error al crear el guardado";
+const char es_error_6[] = "Error del archivo RTS";
+
+const char *es_rom_menu[] = {
+    "INICIO LIMPIO",
+    "INICIO CON OPCIONES",
+    "ESCRIBIR NOR LIMPIO",
+    "ESCRIBIR NOR ADDON",
+    "TIPO SAVE",
+    "TRUCOS"
+};
+
+const char *es_nor_op[3] = {
+    "INICIO DIRECTO",
+    "BORRAR",
+    "FORMATEAR TODO"
 };
 
 
@@ -411,4 +501,83 @@ void LoadEnglish(void)
 	//
 	gl_rom_menu = (char**)en_rom_menu;
 	gl_nor_op = (char**)en_nor_op;
+}
+
+void LoadSpanish(void)
+{
+    gl_init_error    = (char*)es_init_error;
+    gl_power_off     = (char*)es_power_off;
+    gl_init_ok       = (char*)es_init_ok;
+    gl_Loading       = (char*)es_Loading;
+    gl_file_overflow = (char*)es_file_overflow;
+
+    gl_menu_btn     = (char*)es_menu_btn;
+    gl_writing      = (char*)es_writing;
+    gl_lastest_game = es_lastest_game;
+
+    gl_time = (char*)es_time;
+    gl_Mon  = (char*)es_Mon;
+    gl_Tues = (char*)es_Tues;
+    gl_Wed  = (char*)es_Wed;
+    gl_Thur = (char*)es_Thur;
+    gl_Fri  = (char*)es_Fri;
+    gl_Sat  = (char*)es_Sat;
+    gl_Sun  = (char*)es_Sun;
+
+    gl_addon = (char*)es_addon;
+    gl_reset = (char*)es_reset;
+    gl_rts   = (char*)es_rts;
+    gl_sleep = (char*)es_sleep;
+    gl_cheat = (char*)es_cheat;
+
+    gl_hot_key  = (char*)es_hot_key;
+    gl_hot_key2 = (char*)es_hot_key2;
+
+    gl_language = (char*)es_language;
+    gl_en_lang  = (char*)en_lang;
+    gl_zh_lang  = (char*)zh_lang;
+    gl_es_lang  = (char*)es_lang;
+    gl_set_btn  = (char*)es_set_btn;
+    gl_ok_btn   = (char*)es_ok_btn;
+
+    gl_formatnor_info = (char*)es_formatnor_info;
+
+    gl_check_sav = (char*)es_check_sav;
+    gl_make_sav  = (char*)es_make_sav;
+
+    gl_check_RTS = (char*)es_check_RTS;
+    gl_make_RTS  = (char*)es_make_RTS;
+
+    gl_check_pat = (char*)es_check_pat;
+    gl_make_pat  = (char*)es_make_pat;
+
+    gl_loading_game = (char*)es_loading_game;
+
+    gl_engine     = (char*)es_engine;
+    gl_use_engine = (char*)es_use_engine;
+
+    gl_recently_play = (char*)es_recently_play;
+
+    gl_START_help    = (char*)es_START_help;
+    gl_SELECT_help   = (char*)es_SELECT_help;
+    gl_L_A_help      = (char*)es_L_A_help;
+    gl_LSTART_help   = (char*)es_LSTART_help;
+    gl_online_manual = (char*)es_online_manual;
+
+    gl_no_game_played = (char*)es_no_game_played;
+
+    gl_ingameRTC       = (char*)es_ingameRTC;
+    gl_ingameRTC_open  = (char*)es_ingameRTC_open;
+    gl_ingameRTC_close = (char*)es_ingameRTC_close;
+
+    gl_error_0 = (char*)es_error_0;
+    gl_error_1 = (char*)es_error_1;
+    gl_error_2 = (char*)es_error_2;
+    gl_error_3 = (char*)es_error_3;
+    gl_error_4 = (char*)es_error_4;
+    gl_error_5 = (char*)es_error_5;
+    gl_error_6 = (char*)es_error_6;
+
+    gl_rom_menu = (char**)es_rom_menu;
+    gl_nor_op   = (char**)es_nor_op;
 }
