@@ -102,6 +102,7 @@ u32 Setting_window(void);
 
 u32 LoadRTSfile(TCHAR *filename);
 void ShowTime(u32 page_num ,u32 page_mode);
+void CheckLanguage(void);
 
 
 //#endif
