@@ -198,7 +198,7 @@ const char en_hot_key[]  = "SLEEP KEY";
 const char en_hot_key2[] = " MENU KEY";
 
 const char en_language[] = " LANGUAGE";
-const char en_lang[]     = "ENG";
+const char en_lang[]     = " EN";
 const char en_set_btn[]  = "SET";
 const char en_ok_btn[]   = " OK";
 
@@ -246,7 +246,7 @@ const char *en_rom_menu[] = {
 	"WRITE TO NOR CLEAN",
 	"WRITE TO NOR ADDON",
 	"SAVE TYPE",
-	"CHEAT"
+	"CHEATS"
 };
 const char *en_nor_op[3] = {
 	"DIRECT BOOT",
@@ -285,23 +285,23 @@ const char es_cheat[] = "CHEAT";
 const char es_hot_key[]  = "SLEEP KEY";
 const char es_hot_key2[] = " MENU KEY";
 
-const char es_language[] = " LANGUAGE";
-const char es_lang[]     = "ESP";
+const char es_language[] = "   IDIOMA";
+const char es_lang[]     = " ES";
 const char es_set_btn[]  = "SET";
 const char es_ok_btn[]   = " OK";
 
 const char es_formatnor_info[] = "Seguro? aprox. 4 mins";
 
-const char es_check_sav[] = "VERIFICANDO ARCHIVO SAV";
-const char es_make_sav[]  = "CREANDO ARCHIVO SAV";
+const char es_check_sav[] = "VERIFICANDO SAV";
+const char es_make_sav[]  = "CREANDO SAV";
 
-const char es_check_RTS[] = "VERIFICANDO ARCHIVO RTS";
-const char es_make_RTS[]  = "CREANDO ARCHIVO RTS";
+const char es_check_RTS[] = "VERIFICANDO RTS";
+const char es_make_RTS[]  = "CREANDO RTS";
 
-const char es_check_pat[] = "VERIFICANDO ARCHIVO PAT";
-const char es_make_pat[]  = "CREANDO ARCHIVO PAT";
+const char es_check_pat[] = "VERIFICANDO PAT";
+const char es_make_pat[]  = "CREANDO PAT";
 
-const char es_loading_game[] = "CARGANDO JUEGO";
+const char es_loading_game[] = "CARGANDO EL JUEGO";
 
 const char es_engine[]     = "    MOTOR";
 const char es_use_engine[] = "MOTOR PARCHEO RAPIDO";
@@ -312,7 +312,7 @@ const char es_START_help[]    = "Abrir lista de recien jugados";
 const char es_SELECT_help[]   = "Mostrar/ocultar miniaturas";
 const char es_L_A_help[]      = "Multiboot";
 const char es_LSTART_help[]   = "Borrar archivo";
-const char es_online_manual[] = "Manual en linea";
+const char es_online_manual[] = "Manual online";
 
 const char es_no_game_played[] = "No has jugado a nada";
 
