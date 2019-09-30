@@ -79,6 +79,7 @@ char**  gl_rom_menu;
 char**  gl_nor_op;
 
 char* gl_zoe_gift;
+char* gl_continue;
 
 
 // 中文
@@ -169,6 +170,7 @@ const char *zh_nor_op[3] = {
 };
 
 const char zh_zoe_gift[] = "";
+const char zh_continue[] = "按B继续";
 
 
 
@@ -259,6 +261,7 @@ const char *en_nor_op[3] = {
 };
 
 const char en_zoe_gift[] = "";
+const char en_continue[] = "Press B to continue";
 
 
 
@@ -350,6 +353,7 @@ const char *es_nor_op[3] = {
 };
 
 const char es_zoe_gift[] = "Te amo Zoe <3";
+const char es_continue[] = "Presione B para continuar";
 
 
 
@@ -434,7 +438,7 @@ void LoadChinese(void)
 	gl_nor_op = (char**)zh_nor_op;
 
     gl_zoe_gift = (char*)zh_zoe_gift;
-
+    gl_continue = (char*)zh_continue;
 }
 //---------------------------------------------------------------------------------
 void LoadEnglish(void)
@@ -515,6 +519,7 @@ void LoadEnglish(void)
 	gl_nor_op = (char**)en_nor_op;
 
     gl_zoe_gift = (char*)en_zoe_gift;
+    gl_continue = (char*)en_continue;
 }
 
 void LoadSpanish(void)
@@ -596,4 +601,5 @@ void LoadSpanish(void)
     gl_nor_op   = (char**)es_nor_op;
 
     gl_zoe_gift = (char*)es_zoe_gift;
+    gl_continue = (char*)es_continue;
 }

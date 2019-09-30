@@ -79,6 +79,7 @@ extern char**  	gl_rom_menu;
 extern char**   gl_nor_op;
 
 extern char* gl_zoe_gift;
+extern char* gl_continue;
 
 void LoadEnglish(void);
 void LoadChinese(void);

@@ -1635,6 +1635,45 @@ int main(void) {
 
 	res = f_getcwd(currentpath, sizeof currentpath / sizeof *currentpath);
 
+
+    res = f_open(&gfile,"welcome.txt", FA_READ);
+    if (res == FR_OK)
+    {
+        Clear(0,0,240,160,gl_color_cheat_black,1);
+
+        u8 welcome_message[8][512];
+        u8 buf[512];
+        u32 count = 0;
+
+        f_lseek(&gfile, 0x0);
+        memset(buf,0x00,512);
+        while(f_gets(buf, 512, &gfile) != NULL)
+        {
+            Trim(buf);
+            memset(welcome_message[count],0x00,512);
+            dmaCopy(buf,&welcome_message[count],512);
+            memset(buf,0x00,512);
+            count++;
+            if (count==8) break;
+        }
+
+        DrawHZText12(welcome_message,0,(240-strlen(welcome_message)*6)/2,(160/2)-6,gl_color_text,1);
+        DrawHZText12(gl_continue,0,(240-strlen(gl_continue)*6)/2,160-15,gl_color_text,1);
+
+        while (1) {
+            VBlankIntrWait();
+
+            scanKeys();
+            u16 keys = keysDown();
+
+            if (keys & KEY_B) {
+                break;
+            }
+        }
+        VBlankIntrWait ();
+    }
+    f_close(&gfile);
+
 	Read_NOR_info();
 	gl_norOffset = 0x000000;
 	game_total_NOR = GetFileListFromNor();//initialize to prevent direct writes to NOR without page turning
