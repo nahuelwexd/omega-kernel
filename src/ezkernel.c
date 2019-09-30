@@ -1657,7 +1657,12 @@ int main(void) {
             if (count==8) break;
         }
 
-        DrawHZText12(welcome_message,0,(240-strlen(welcome_message)*6)/2,(160/2)-6,gl_color_text,1);
+        for (int line = 0; line < count; line++) {
+            char msg[256];
+            sprintf(msg, "%s", &(welcome_message[line]));
+            DrawHZText12(msg,39,(240-strlen(msg)*6)/2,(160/2)-(7*count)+(14*line),gl_color_text,1);
+        }
+
         DrawHZText12(gl_continue,0,(240-strlen(gl_continue)*6)/2,160-15,gl_color_text,1);
 
         while (1) {
