@@ -1174,15 +1174,13 @@ u32 IWRAM_CODE Loadfile2PSRAM(TCHAR *filename)
 	if(res == FR_OK)
 	{
 		filesize = f_size(&gfile);
-		Clear(60,160-15,120,15,gl_color_cheat_black,1);
-		DrawHZText12(gl_writing,0,78,160-15,gl_color_text,1);
 
 		f_lseek(&gfile, 0x0000);
 		for(blocknum=0x0000;blocknum<filesize;blocknum+=0x20000)
 		{
-			sprintf(msg,"%luMb",(blocknum)/0x20000);
-			Clear(78+54,160-15,110,15,gl_color_cheat_black,1);
-			DrawHZText12(msg,0,78+54,160-15,gl_color_text,1);
+			sprintf(msg,"%s %luMb",gl_writing,(blocknum)/0x20000);
+			Clear(0,160-15,240,15,gl_color_cheat_black,1);
+			DrawHZText12(msg,0,(240-strlen(msg)*6)/2,160-15,gl_color_text,1);
 			f_read(&gfile, pReadCache, 0x20000, &ret);//pReadCache max 0x20000 Byte
 
 			if((gl_reset_on==1) || (gl_rts_on==1) || (gl_sleep_on==1) || (gl_cheat_on==1))
@@ -1359,15 +1357,12 @@ u32 IWRAM_CODE LoadEMU2PSRAM(TCHAR *filename,u32 is_EMU)
 			dmaCopy((void*)pReadCache,PSRAMBase_S98 + 0x830, 0x4);
 		}
 
-		Clear(60,160-15,120,15,gl_color_cheat_black,1);
-		DrawHZText12(gl_writing,0,78,160-15,gl_color_text,1);
-
 		f_lseek(&gfile, 0x0000);
 		for(blocknum=0x0000;blocknum<filesize;blocknum+=0x20000)
 		{
-			sprintf(msg,"%luMb",(blocknum)/0x20000);
-			Clear(78+54,160-15,110,15,gl_color_cheat_black,1);
-			DrawHZText12(msg,0,78+54,160-15,gl_color_text,1);
+			sprintf(msg,"%s %luMb",gl_writing,(blocknum)/0x20000);
+			Clear(0,160-15,240,15,gl_color_cheat_black,1);
+			DrawHZText12(msg,0,(240-strlen(msg)*6)/2,160-15,gl_color_text,1);
 			//f_lseek(&gfile, blocknum);
 			f_read(&gfile, pReadCache, 0x20000, &ret);//pReadCache max 0x20000 Byte
 
