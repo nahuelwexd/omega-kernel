@@ -276,14 +276,12 @@ u32 Loadfile2NOR(TCHAR *filename, u32 NORaddress,u32 have_patch)
 		
 		sprintf(tmpNorFS.filename,"%s",filename);
 		dmaCopy(&tmpNorFS,&pNorFS[game_total_NOR], sizeof(FM_NOR_FS));
- 
-		Clear(60,160-15,120,15,gl_color_cheat_black,1);	
-		DrawHZText12(gl_writing,0,78,160-15,gl_color_text,1);	
+
 		for(blocknum=0;blocknum<filesize;blocknum+=0x20000)
 		{		
-			sprintf(msg,"%luMb",(blocknum)/0x20000);
-			Clear(78+54,160-15,100,15,gl_color_cheat_black,1);
-			DrawHZText12(msg,0,78+54,160-15,gl_color_text,1);
+			sprintf(msg,"%s %luMb",gl_writing,(blocknum)/0x20000);
+			Clear(0,160-15,240,15,gl_color_cheat_black,1);
+			DrawHZText12(msg,0,(240-strlen(msg)*6)/2,160-15,gl_color_text,1);
 			Block_Erase(blocknum+NORaddress);
 
 			f_lseek(&gfile, blocknum);
