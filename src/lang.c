@@ -296,7 +296,7 @@ const char es_lang[]     = " ES";
 const char es_set_btn[]  = "SET";
 const char es_ok_btn[]   = " OK";
 
-const char es_formatnor_info[] = "Seguro? aprox. 4 mins";
+const char es_formatnor_info[] = "Seguro? aprox 4 mins";
 
 const char es_check_sav[] = "VERIFICANDO SAV";
 const char es_make_sav[]  = "CREANDO SAV";
@@ -310,7 +310,7 @@ const char es_make_pat[]  = "CREANDO PAT";
 const char es_loading_game[] = "CARGANDO EL JUEGO";
 
 const char es_engine[]     = "    MOTOR";
-const char es_use_engine[] = "PARCHEO RAPIDO";
+const char es_use_engine[] = "PARCHADO RAPIDO";
 
 const char es_recently_play[] = "RECIEN JUGADO";
 
